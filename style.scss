@@ -1,0 +1,151 @@
+$white: #fff;
+$off-white: rgba(255,255,255,.75);
+$grey: #5f5f5f;
+$black: #000;
+$off-black: rgba(0,0,0,.75);
+$red-orange: #FF4141;
+$blue: #121E2D;
+
+
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+}
+
+body{
+  position: relative;
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $off-black;
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li{
+        margin: 10px 20px;
+        list-style: none;
+        a{
+          text-decoration: none;
+          color: $white;
+          &:hover{
+            color: $red-orange;
+          }
+        }
+      }
+    }
+  }
+  #welcome-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+            linear-gradient(rgba(0, 0, 0, .75),rgba(0, 0, 0, .75)),
+            url("assets/neon-room.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1{
+      font-size: 3.5vw;
+      color: $white;
+      #initials{
+        border: 3px solid $red-orange;
+        padding: 15px 5px 5px;
+        margin-right: 15px;
+      }
+    }
+  }
+  #about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    @media all and (max-width: 991px) {
+      width: 90%;
+      margin-left: 5%;
+    }
+    h2{
+      color: $red-orange;
+      margin: 20px;
+    }
+    p{
+      color: $grey;
+    }
+  }
+  #projects{
+    .project-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .project-tile{
+        width: 350px;
+        height: 250px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          color: $white;
+          text-decoration: none;
+          &:hover{
+            color: $red-orange;
+          }
+        }
+      }
+    }
+  }
+  #contact{
+    background-color: $blue;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $red-orange;
+    h3{
+      color: $off-white;
+      padding: 5px 10px;
+      font-size: 100%;
+      font-weight: 100;
+      &:hover{
+        color: $white;
+        border: 1px solid $red-orange;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      i{
+        color: $red-orange;
+        margin-right: 3px;
+      }
+    }
+    #social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      h3{
+        border: 1px solid $red-orange;
+        border-radius: 3px;
+        margin: 0 15px;
+        a{
+          text-decoration: none;
+          color: $off-white;
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+

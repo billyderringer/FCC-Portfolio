@@ -1,0 +1,114 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps; }
+
+body {
+  position: relative; }
+  body nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75); }
+    body nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body nav ul li {
+        margin: 10px 20px;
+        list-style: none; }
+        body nav ul li a {
+          text-decoration: none;
+          color: #fff; }
+          body nav ul li a:hover {
+            color: #FF4141; }
+  body #welcome-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("assets/neon-room.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    body #welcome-section h1 {
+      font-size: 3.5vw;
+      color: #fff; }
+      body #welcome-section h1 #initials {
+        border: 3px solid #FF4141;
+        padding: 15px 5px 5px;
+        margin-right: 15px; }
+  body #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%; }
+    @media all and (max-width: 991px) {
+      body #about {
+        width: 90%;
+        margin-left: 5%; } }
+    body #about h2 {
+      color: #FF4141;
+      margin: 20px; }
+    body #about p {
+      color: #5f5f5f; }
+  body #projects .project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    body #projects .project-container .project-tile {
+      width: 350px;
+      height: 250px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body #projects .project-container .project-tile a {
+        color: #fff;
+        text-decoration: none; }
+        body #projects .project-container .project-tile a:hover {
+          color: #FF4141; }
+  body #contact {
+    background-color: #121E2D;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF4141; }
+    body #contact h3 {
+      color: rgba(255, 255, 255, 0.75);
+      padding: 5px 10px;
+      font-size: 100%;
+      font-weight: 100; }
+      body #contact h3:hover {
+        color: #fff;
+        border: 1px solid #FF4141;
+        border-radius: 3px;
+        cursor: pointer; }
+      body #contact h3 i {
+        color: #FF4141;
+        margin-right: 3px; }
+    body #contact #social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
+      body #contact #social h3 {
+        border: 1px solid #FF4141;
+        border-radius: 3px;
+        margin: 0 15px; }
+        body #contact #social h3 a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.75); }
+          body #contact #social h3 a:hover {
+            color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

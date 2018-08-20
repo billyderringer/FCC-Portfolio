@@ -93,14 +93,20 @@ body {
         border: 1px solid #FF4141;
         border-radius: 3px;
         cursor: pointer; }
-      body #contact h3 i {
-        color: #FF4141;
-        margin-right: 3px; }
+      body #contact h3 a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none; }
+        body #contact h3 a:hover {
+          color: #fff; }
+        body #contact h3 a i {
+          color: #FF4141;
+          margin-right: 3px; }
     body #contact #social {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row; }
+      flex-direction: row;
+      margin-top: 20px; }
       body #contact #social h3 {
         border: 1px solid #FF4141;
         border-radius: 3px;

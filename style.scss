@@ -123,9 +123,16 @@ body{
         border-radius: 3px;
         cursor: pointer;
       }
-      i{
-        color: $red-orange;
-        margin-right: 3px;
+      a{
+        color: $off-white;
+        text-decoration: none;
+        &:hover{
+          color: $white;
+        }
+        i{
+          color: $red-orange;
+          margin-right: 3px;
+        }
       }
     }
     #social{
@@ -133,6 +140,7 @@ body{
       justify-content: center;
       align-items: center;
       flex-direction: row;
+      margin-top: 20px;
       h3{
         border: 1px solid $red-orange;
         border-radius: 3px;
